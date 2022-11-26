@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  @apply defaultTextColor;
+}
+
 html,
 body {
   padding: 0;
