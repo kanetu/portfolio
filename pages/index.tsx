@@ -1,4 +1,4 @@
-import { MailIcon, PhoneIcon } from "../components/icons";
+import { MailIcon, PhoneIcon } from "../components/Icons";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         rich experience in building web applications, especially with ReactJS.
       </p>
       <div className="contact mt-[60px]">
-        <div className="flex">
+        <div className="flex mb-[10px]">
           <MailIcon className="w-[28px] h-[28px] mr-[8px]" />
           <span>kanetu731@gmail.com</span>
         </div>

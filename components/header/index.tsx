@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { HomeIcon, MenuIcon } from "../icons";
+import { HomeIcon, MenuIcon } from "../Icons";
+import Link from "next/link";
+
 export default function Header() {
   return (
     <>
@@ -29,9 +31,11 @@ export default function Header() {
           alt="avatar"
         />
         <div className="flex p-[25px] justify-between">
-          <button className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project">
-            <HomeIcon className="w-[30px] h-[30px]" />
-          </button>
+          <Link href="/">
+            <button className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project">
+              <HomeIcon className="w-[30px] h-[30px]" />
+            </button>
+          </Link>
           <button className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project">
             <MenuIcon className="w-[30px] h-[30px]" />
           </button>
