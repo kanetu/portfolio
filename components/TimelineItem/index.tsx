@@ -15,8 +15,8 @@ export const TimelineEnd: React.FC<ITimelineItem> = ({
         <span className="text-[14px] text-project-black-700">{period}</span>
       </div>
       <div className="flex flex-col items-center w-[4px]">
-        <div className="rounded-full w-[10px] h-[10px] bg-project-primary outline outline-2 outline-project-lightPrimary"></div>
-        <div className=" w-[4px] h-[80px] bg-project-lightPrimary"></div>
+        <div className="rounded-full w-[10px] h-[10px] bg-project-primary-100 outline outline-2 outline-project-primary-500"></div>
+        <div className=" w-[4px] h-[80px] bg-project-primary-500"></div>
       </div>
     </div>
   );
@@ -34,8 +34,8 @@ const TimelineItem: React.FC<ITimelineItem> = ({ companyName, period }) => {
         <span className="text-[14px] text-project-black-700">{period}</span>
       </div>
       <div className="flex flex-col items-center w-[4px]">
-        <div className="rounded-full w-[10px] h-[10px] bg-project-primary"></div>
-        <div className=" w-[4px] h-[80px] bg-project-lightPrimary"></div>
+        <div className="rounded-full w-[10px] h-[10px] bg-project-primary-100"></div>
+        <div className=" w-[4px] h-[80px] bg-project-primary-500"></div>
       </div>
     </div>
   );

@@ -3,7 +3,10 @@ import Image from "next/image";
 import { HomeIcon, MenuIcon } from "../Icons";
 import Link from "next/link";
 
-export default function Header() {
+interface IHeader {
+  onClickMenu: () => void;
+}
+const Header: React.FC<IHeader> = ({ onClickMenu }) => {
   return (
     <>
       <Head>
@@ -36,11 +39,16 @@ export default function Header() {
               <HomeIcon className="w-[30px] h-[30px]" />
             </button>
           </Link>
-          <button className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project">
+          <button
+            onClick={onClickMenu}
+            className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project"
+          >
             <MenuIcon className="w-[30px] h-[30px]" />
           </button>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default Header;
