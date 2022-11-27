@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:not(svg, path){
+  @apply defaultTextColor;
+}
+
 html,
 body {
   padding: 0;
