@@ -1,10 +1,9 @@
-import Image from "next/image";
 import CertificateItem from "../../components/CertificateItem";
 
 const About = () => {
   return (
     <>
-      <h2 className="uppercase text-[32px]">About</h2>
+      <h2 className="text-[32px]">About</h2>
       <h3 className="text-[24px]">I&apos;m Hieu</h3>
       <p className="text-[16px]">
         I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
