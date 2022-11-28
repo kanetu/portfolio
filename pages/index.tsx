@@ -1,5 +1,6 @@
 import { MailIcon, PhoneIcon } from "../components/Icons";
 import Image from "next/image";
+import imageLoader from "../utils/imgLoader";
 
 export default function Home() {
   return (
@@ -25,7 +26,8 @@ export default function Home() {
       <div className="socials mt-[90px] flex justify-center">
         <a href="https://www.linkedin.com/in/kanetu731/">
           <Image
-            src="/linkedin.png"
+            loader={imageLoader}
+            src="linkedin.png"
             width="165"
             height="165"
             className="w-[35px] h-[35px] mr-[20px]"
@@ -35,7 +37,8 @@ export default function Home() {
         </a>
         <a href="https://github.com/kanetu">
           <Image
-            src="/github.png"
+            loader={imageLoader}
+            src="github.png"
             width="165"
             height="165"
             className="w-[35px] h-[35px]"

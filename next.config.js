@@ -3,12 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    unoptimized: true
-    // loader: "akamai",
+    loader: "custom",
     // path: ''
   },
-  // basePath: "/portfolio",
-  // assetPrefix: "/portfolio"
+  basePath: "/portfolio",
+  assetPrefix: "/portfolio"
 }
 
 module.exports = nextConfig

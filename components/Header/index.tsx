@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { HomeIcon, MenuIcon } from "../Icons";
 import Link from "next/link";
+import imageLoader from "../../utils/imgLoader";
 
 interface IHeader {
   onClickMenu: () => void;
@@ -17,7 +18,8 @@ const Header: React.FC<IHeader> = ({ onClickMenu }) => {
 
       <div>
         <Image
-          src="/wall-paper.jpg"
+          loader={imageLoader}
+          src="wall-paper.jpg"
           layout="responsive"
           width="100"
           height="100"
@@ -26,7 +28,8 @@ const Header: React.FC<IHeader> = ({ onClickMenu }) => {
           alt="wall-paper"
         />
         <Image
-          src="/avatar.jpg"
+          loader={imageLoader}
+          src="avatar.jpg"
           width="165"
           height="165"
           className="w-[165px] h-[165px] rounded-full absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[white] border-4"
