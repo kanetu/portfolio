@@ -18,7 +18,6 @@ const Menu: React.FC<IMenu> = ({ isShowMenu, onClickMenu }) => {
        bg-project-bgMenu 
        z-40 
        top-0 
-       left-0 
        left-[${isShowMenu ? "0" : "-100%"}]`}
     >
       <button

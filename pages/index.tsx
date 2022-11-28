@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      <div className="whitelist left-[0] left-[-100%] hidden"></div>
       <h2 className="uppercase text-[32px]">Hello!</h2>
       <h3 className="text-[24px]">I&apos;m Hieu</h3>
       <p className="text-[16px]">
