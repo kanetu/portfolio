@@ -4,10 +4,9 @@ const nextConfig = {
   swcMinify: true,
   images: {
     loader: "custom",
-    // path: ''
   },
-  basePath: "/portfolio",
-  assetPrefix: "/portfolio"
+  // basePath: "/portfolio",
+  // assetPrefix: "/portfolio"
 }
 
 module.exports = nextConfig
