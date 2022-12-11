@@ -23,7 +23,7 @@ const Header: React.FC<IHeader> = ({ onClickMenu }) => {
           layout="responsive"
           width="100"
           height="100"
-          className="max-h-[240px]"
+          className="max-h-[15em] object-cover"
           objectFit="contain"
           alt="wall-paper"
         />
@@ -32,21 +32,40 @@ const Header: React.FC<IHeader> = ({ onClickMenu }) => {
           src="avatar.jpg"
           width="165"
           height="165"
-          className="w-[165px] h-[165px] rounded-full absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-[white] border-4"
+          className="w-[10.3125em] h-[10.3125em] md:w-[14.375em] md:h-[14.375em] rounded-full absolute left-1/2 md:left-[16em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 md:-translate-y-2/3 border-[white] border-4"
           objectFit="cover"
           alt="avatar"
         />
-        <div className="flex p-[25px] justify-between">
+        <div className="hidden md:block">
+          <ul className="text-[1.25em] flex justify-between md:max-w-[25em] md:ml-[25em] ">
+            <li className="md:mx-[1em] md:my-[1em]">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="md:mx-[1em] md:my-[1em]">
+              <Link href="/about">About</Link>
+            </li>
+            <li className="md:mx-[1em] md:my-[1em]">
+              <Link href="/works">Works</Link>
+            </li>
+            <li className="md:mx-[1em] md:my-[1em]">
+              <Link href="/contact">Contact</Link>
+            </li>
+            <li className="md:mx-[1em] md:my-[1em]">
+              <Link href="/">Blog</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="flex p-[1.5625em] justify-between md:hidden">
           <Link href="/">
-            <button className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project">
-              <HomeIcon className="w-[30px] h-[30px]" />
+            <button className="rounded-full w-[3.125em] h-[3.125em] rounded-full flex items-center justify-center shadow-project">
+              <HomeIcon className="w-[1.875em] h-[1.875em]" />
             </button>
           </Link>
           <button
             onClick={onClickMenu}
-            className="rounded-full w-[50px] h-[50px] rounded-full flex items-center justify-center shadow-project"
+            className="rounded-full w-[3.125em] h-[3.125em] rounded-full flex items-center justify-center shadow-project"
           >
-            <MenuIcon className="w-[30px] h-[30px]" />
+            <MenuIcon className="w-[1.875em] h-[1.875em]" />
           </button>
         </div>
       </div>
