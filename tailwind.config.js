@@ -27,7 +27,7 @@ module.exports = {
     
     extend: {
       boxShadow: {
-        'project': '0 0 4px 0 rgba(217, 217, 217, 0.6)',
+        'project': '0 0 0.25em 0 rgba(217, 217, 217, 0.6)',
       },
       keyframes: {
         wiggle: {

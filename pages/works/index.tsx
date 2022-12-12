@@ -21,9 +21,9 @@ const Works = () => {
   ];
   return (
     <>
-      <h2 className="text-[32px]">Works</h2>
-      <h3 className="text-[24px]">I&apos;m Hieu</h3>
-      <p className="text-[16px]">
+      <h2 className="text-[2em]">Works</h2>
+      <h3 className="text-[1.5em]">I&apos;m Hieu</h3>
+      <p className="text-[1em]">
         I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
         rich experience in building web applications, especially with ReactJS.
       </p>

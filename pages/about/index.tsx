@@ -3,14 +3,14 @@ import CertificateItem from "../../components/CertificateItem";
 const About = () => {
   return (
     <>
-      <h2 className="text-[32px]">About</h2>
-      <h3 className="text-[24px]">I&apos;m Hieu</h3>
-      <p className="text-[16px]">
+      <h2 className="text-[2em]">About</h2>
+      <h3 className="text-[1.5em]">I&apos;m Hieu</h3>
+      <p className="text-[1em]">
         I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
         rich experience in building web applications, especially with ReactJS.
       </p>
 
-      <h3 className="text-[20px] font-bold mt-[26px] mb-[10px]">
+      <h3 className="text-[1.25em] font-bold mt-[1.625em] mb-[0.625em]">
         Certificates
       </h3>
       <CertificateItem

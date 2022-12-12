@@ -12,6 +12,11 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  @apply md:text-[.75em];
+  @apply lg:text-[.75em];
+  @apply xl:text-[.75em];
+  @apply 2xl:text-[1em];
 }
 
 a {
