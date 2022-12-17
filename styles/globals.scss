@@ -15,7 +15,7 @@ body {
 
   @apply md:text-[.75em];
   @apply lg:text-[.75em];
-  @apply xl:text-[.75em];
+  @apply xl:text-[1em];
   @apply 2xl:text-[1em];
 }
 
@@ -36,4 +36,18 @@ a {
     color: white;
     background: black;
   }
+}
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
 }
