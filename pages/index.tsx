@@ -8,9 +8,10 @@ export default function Home() {
       <div className="whitelist left-[0] left-[-100%] hidden"></div>
       <h2 className="uppercase text-[2em] md:text-[2.5em]">Hello!</h2>
       <h3 className="text-[1.5em] md:text-[1.5em]">I&apos;m Hieu</h3>
-      <p className="text-[1em] md:text-[1.25em]">
-        I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
-        rich experience in building web applications, especially with ReactJS.
+      <p className=" md:[font-size: em(120px)]">
+        {/* <p className="text-[1em] md:text-[1.25em]"> */}I am Tu Minh Hieu,
+        you could call me Kane, a Frontend engineer. I have rich experience in
+        building web applications, especially with ReactJS.
       </p>
 
       <div className="contact__wapper md:flex md:mt-[3.75em] md:items-center md:justify-between max-w-[77em]">

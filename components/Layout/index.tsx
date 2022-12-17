@@ -2,9 +2,12 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { useState } from "react";
 import Menu from "../Menu";
+import { useRouter } from "next/router";
 
 const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
   const [isShowMenu, setIsShowMenu] = useState(false);
+
+  const router = useRouter();
 
   const onClickMenu = () => {
     setIsShowMenu(!isShowMenu);
@@ -12,20 +15,22 @@ const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
 
   return (
     <>
-      <Header onClickMenu={onClickMenu} />
+      <Header onClickMenu={onClickMenu} currentRoute={router.pathname} />
       <Menu onClickMenu={onClickMenu} isShowMenu={isShowMenu} />
-      <main
-        className="
+      <div className="md:flex md:justify-center md:w-full">
+        <main
+          className="
         px-[1.5625em]
         md:flex
         md:flex-col
         md:mt-[3em]
-        md:ml-[15em]
-        md:mr-[15em]
+        md:w-[43.75em]
+        md:
         "
-      >
-        {children}
-      </main>
+        >
+          {children}
+        </main>
+      </div>
       <Footer />
     </>
   );

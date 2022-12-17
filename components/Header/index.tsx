@@ -5,9 +5,10 @@ import Link from "next/link";
 import imageLoader from "../../utils/imgLoader";
 
 interface IHeader {
+  currentRoute: string;
   onClickMenu: () => void;
 }
-const Header: React.FC<IHeader> = ({ onClickMenu }) => {
+const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
   return (
     <>
       <Head>
@@ -32,26 +33,56 @@ const Header: React.FC<IHeader> = ({ onClickMenu }) => {
           src="avatar.jpg"
           width="165"
           height="165"
-          className="w-[10.3125em] h-[10.3125em] md:w-[14.375em] md:h-[14.375em] rounded-full absolute left-1/2 md:left-[16em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2 md:-translate-y-2/3 border-[white] border-4"
+          className="w-[10.3125em] h-[10.3125em] md:w-[14.375em] md:h-[14.375em] rounded-full absolute left-1/2 md:left-[calc(50%-15em)] transform -translate-x-1/2 -translate-y-1/2 md:-translate-y-2/3 border-[white] border-4"
           objectFit="cover"
           alt="avatar"
         />
-        <div className="hidden md:block">
-          <ul className="text-[1.25em] flex justify-between md:max-w-[25em] md:ml-[25em] ">
-            <li className="md:mx-[1em] md:my-[1em]">
+        <div className="hidden md:block md:relative md:w-full md:h-[2em]">
+          <ul className="text-[1.25em] flex justify-between md:max-w-[25em] md:absolute left-[calc(50%-6em)] top-[1.25em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2">
+            <li
+              className={`${
+                currentRoute == "/"
+                  ? "border-b-2 border-dashed border-project-primary"
+                  : ""
+              } md:mx-[1em] md:my-[1em]`}
+            >
               <Link href="/">Home</Link>
             </li>
-            <li className="md:mx-[1em] md:my-[1em]">
+            <li
+              className={`${
+                currentRoute == "/about"
+                  ? "border-b-2 border-dashed border-project-primary"
+                  : ""
+              } md:mx-[1em] md:my-[1em]`}
+            >
               <Link href="/about">About</Link>
             </li>
-            <li className="md:mx-[1em] md:my-[1em]">
+            <li
+              className={`${
+                currentRoute == "/works"
+                  ? "border-b-2 border-dashed border-project-primary"
+                  : ""
+              } md:mx-[1em] md:my-[1em]`}
+            >
               <Link href="/works">Works</Link>
             </li>
-            <li className="md:mx-[1em] md:my-[1em]">
+            <li
+              className={`${
+                currentRoute == "/contact"
+                  ? "border-b-2 border-dashed border-project-primary"
+                  : ""
+              } md:mx-[1em] md:my-[1em]`}
+            >
               <Link href="/contact">Contact</Link>
             </li>
-            <li className="md:mx-[1em] md:my-[1em]">
-              <Link href="/">Blog</Link>
+            <li
+              className={`${
+                currentRoute == "/blog"
+                  ? "border-b-2 border-dashed border-project-primary"
+                  : ""
+              } md:mx-[1em] md:my-[1em]`}
+            >
+              Blog
             </li>
           </ul>
         </div>
