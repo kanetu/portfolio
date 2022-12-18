@@ -4,6 +4,14 @@
 
 *:not(svg, path){
   @apply defaultTextColor;
+  
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  *:not(svg, path) {
+    @apply text-white;
+  }
 }
 
 html,

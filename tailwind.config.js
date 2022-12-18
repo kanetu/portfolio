@@ -2,6 +2,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -10,18 +11,21 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       borderColor: '#D9D9D9',
+      white: '#FFFFFF',
       project:{
         black: {
           100:'#342828',
           400: "rgba(52, 40, 40, 0.4)",
           700: "rgba(52, 40, 40, 0.7)"
         },
+
         primary: {
           100: "#0EAC27",
           500: "rgba(14, 172, 39, 0.5)"
         },
         gray: '#D9D9D9',
-        bgMenu: "rgba(255, 255, 255, 0.95)"
+        bgMenu: "rgba(255, 255, 255, 0.95)",
+        bgDarkMenu: "rgba(255, 255, 255, 0.95)",
       }
     },
     
