@@ -6,18 +6,18 @@ const Works = () => {
     {
       id: 4,
       companyName: "Nashtech",
-      period: "April 2021 - Feb 2023",
+      period: "Apr 2021 - Feb 2023",
       isEnd: true,
     },
     {
       id: 3,
       companyName: "Evizi",
-      period: "April 2021 - Feb 2023",
+      period: "Apr 2021 - Feb 2023",
     },
     {
       id: 2,
       companyName: "Bstar Solutions",
-      period: "April 2021 - Feb 2023",
+      period: "Apr 2021 - Feb 2023",
     },
   ];
   return (

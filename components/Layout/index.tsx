@@ -14,7 +14,7 @@ const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
   };
 
   return (
-    <>
+    <div className="dark">
       <Header onClickMenu={onClickMenu} currentRoute={router.pathname} />
       <Menu onClickMenu={onClickMenu} isShowMenu={isShowMenu} />
       <div className="md:flex md:justify-center md:w-full">
@@ -32,7 +32,7 @@ const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
         </main>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

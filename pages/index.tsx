@@ -8,10 +8,9 @@ export default function Home() {
       <div className="whitelist left-[0] left-[-100%] hidden"></div>
       <h2 className="uppercase text-[2em] md:text-[2.5em]">Hello!</h2>
       <h3 className="text-[1.5em] md:text-[1.5em]">I&apos;m Hieu</h3>
-      <p className=" md:[font-size: em(120px)]">
-        {/* <p className="text-[1em] md:text-[1.25em]"> */}I am Tu Minh Hieu,
-        you could call me Kane, a Frontend engineer. I have rich experience in
-        building web applications, especially with ReactJS.
+      <p className="text-[1em] md:text-[1.25em]">
+        I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
+        rich experience in building web applications, especially with ReactJS.
       </p>
 
       <div className="contact__wapper md:flex md:mt-[3.75em] md:items-center md:justify-between max-w-[77em]">
@@ -26,7 +25,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="socials mt-[5.625em] md:mt-0 flex justify-center ">
+        <div className="socials my-[2.625em] md:mt-0 flex justify-center ">
           <a href="https://www.linkedin.com/in/kanetu731/">
             <Image
               loader={imageLoader}
@@ -38,7 +37,7 @@ export default function Home() {
               alt="avatar"
             />
           </a>
-          <a href="https://github.com/kanetu">
+          <a href="https://github.com/kanetu" className="rounded-full bg-white">
             <Image
               loader={imageLoader}
               src="github.png"

@@ -15,7 +15,8 @@ const Menu: React.FC<IMenu> = ({ isShowMenu, onClickMenu }) => {
        items-center 
        justify-center 
        fixed 
-       bg-project-bgMenu 
+       bg-project-bgMenu
+       dark:bg-project-black-100
        z-40 
        top-0 
        left-[${isShowMenu ? "0" : "-100%"}]`}

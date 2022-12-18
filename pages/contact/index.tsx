@@ -1,6 +1,20 @@
+import { useEffect } from "react";
 import { MailIcon, PhoneIcon, SendIcon } from "../../components/Icons";
 
 const Contact: React.FC = () => {
+  const handleSendMail = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+    const target = e.target as typeof e.target & {
+      subject: { value: string };
+      body: { value: string };
+    };
+    const subject = target.subject.value;
+    const body = target.body.value;
+
+    const link = document.createElement("a");
+    link.href = `mailto:kanetu731@gmail.com?subject=${subject}&body=${body}`;
+    link.click();
+  };
   return (
     <>
       <h2 className="text-[2em] md:flex md:items-center">
@@ -22,12 +36,7 @@ const Contact: React.FC = () => {
 
       <div className="socials mt-[1.875em]">
         <h4 className="font-bold text-[1em] mb-[0.9375em]">Send message:</h4>
-        <form
-          action="mailto:kanetu@gmail.com"
-          method="POST"
-          name="emailForm"
-          className="mb-20"
-        >
+        <form name="emailForm" className="mb-20" onSubmit={handleSendMail}>
           <div className="md:flex md:items-center">
             <fieldset className="flex flex-col md:flex-1 md:mr-[2.625em]">
               <label className="text-[0.9375em] mb-[0.25em]">Your name:</label>
@@ -58,7 +67,7 @@ const Contact: React.FC = () => {
           <fieldset className="flex flex-col mt-[0.9375em]">
             <label className="text-[0.9375em] mb-[0.25em]">Message:</label>
             <textarea
-              name="message"
+              name="body"
               cols={30}
               rows={3}
               className=" p-2 border rounded-md"
