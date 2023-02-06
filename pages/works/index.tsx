@@ -6,18 +6,18 @@ const Works = () => {
     {
       id: 4,
       companyName: "Nashtech",
-      period: "Apr 2021 - Feb 2023",
+      period: "Apr 2021 - Present",
       isEnd: true,
     },
     {
       id: 3,
       companyName: "Evizi",
-      period: "Apr 2021 - Feb 2023",
+      period: "Jul 2020 - Mar 2021",
     },
     {
       id: 2,
       companyName: "Bstar Solutions",
-      period: "Apr 2021 - Feb 2023",
+      period: "Jun 2019 - Jun 2020",
     },
   ];
   return (
@@ -28,10 +28,12 @@ const Works = () => {
         </span>
         <span>Works</span>
       </h2>
-      <h3 className="text-[1.5em] md:mt-[1.375em]">I&apos;m Hieu</h3>
       <p className="text-[1em]">
-        I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
-        rich experience in building web applications, especially with ReactJS.
+        This is my professional timeline and highlight my collaborations with a
+        range of companies. This page serves as a visual representation of my
+        journey as a Front-End Engineer and a testament to my versatility,
+        experience, and expertise in delivering innovative and effective web
+        solutions.
       </p>
       <Timeline data={data} />
     </>

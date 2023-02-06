@@ -23,6 +23,12 @@ const Contact: React.FC = () => {
         </span>
         <span>Contact</span>
       </h2>
+      <p className="text-[1em]">
+        Whether you have a question, a project in mind, or just want to say
+        hello, I am here to listen. I look forward to hearing from you and
+        starting a conversation about how I can help bring your next web project
+        to life.
+      </p>
       <div className="contact mt-[0.5em] md:hidden">
         <div className="flex mb-[0.625em]">
           <MailIcon className="w-[1.75em] h-[1.75em] mr-[0.5em]" />
