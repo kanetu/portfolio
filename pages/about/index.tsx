@@ -10,10 +10,10 @@ const About = () => {
         </span>
         <span>About</span>
       </h2>
-      <h3 className="text-[1.5em] md:mt-[1.375em]">I&apos;m Hieu</h3>
       <p className="text-[1em]">
-        I am Tu Minh Hieu, you could call me Kane, a Frontend engineer. I have
-        rich experience in building web applications, especially with ReactJS.
+        I am proud to possess a wealth of experience and a range of certificates
+        that demonstrate my commitment to staying up-to-date with the latest
+        technologies.
       </p>
 
       <h3 className="text-[1.25em] font-bold mt-[1.625em] mb-[0.625em]">
