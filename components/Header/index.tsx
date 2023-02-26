@@ -68,7 +68,7 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
           alt="avatar"
         />
         <div className="hidden md:block md:relative md:w-full md:h-[2em]">
-          <ul className="text-[1.25em] flex justify-between md:max-w-[25em] md:absolute left-[calc(50%-6em)] top-[1.25em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2">
+          <ul className="text-[1.25em] font-light flex justify-between md:max-w-[25em] md:absolute left-[calc(50%-6em)] top-[1.25em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2">
             <li
               className={`${
                 currentRoute == "/" ? "font-normal" : ""
