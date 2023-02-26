@@ -17,8 +17,8 @@ const Contact: React.FC = () => {
   };
   return (
     <>
-      <h2 className="text-[2em] md:flex md:items-center">
-        <span className="hidden md:inline mr-[0.34375em]">
+      <h2 className="text-[1.5em] md:flex md:items-center">
+        <span className="hidden md:inline mr-[0.34375em] md:ml-[-5px]">
           <MailIcon className="w-[2.1875em] h-[2.1875em]" />
         </span>
         <span>Contact</span>

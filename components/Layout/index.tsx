@@ -23,9 +23,8 @@ const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
         px-[1.5625em]
         md:flex
         md:flex-col
-        md:mt-[3em]
+        md:mt-[4em]
         md:w-[43.75em]
-        md:
         "
         >
           {children}

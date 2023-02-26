@@ -4,8 +4,8 @@ import { UserIcon } from "../../components/Icons";
 const About = () => {
   return (
     <>
-      <h2 className="text-[2em] md:flex md:items-center">
-        <span className="hidden md:inline mr-[0.34375em]">
+      <h2 className="text-[1.5em] md:flex md:items-center">
+        <span className="hidden md:inline mr-[0.34375em] md:ml-[-5px]">
           <UserIcon className="w-[2.1875em] h-[2.1875em]" />
         </span>
         <span>About</span>
@@ -21,14 +21,19 @@ const About = () => {
       </h3>
       <div className="md:grid md:grid-cols-2 md:gap-[2em]">
         <CertificateItem
-          title="Foundations of User Experience "
+          title="Foundations of User Experience (UX) Design"
           completeDate="November 16, 2022"
-          link="google.com"
+          link="https://www.coursera.org/account/accomplishments/verify/9CU5ZRKZKNQH"
         />
         <CertificateItem
-          title="Foundations of User Experience "
-          completeDate="November 16, 2022"
-          link="google.com"
+          title="Start the UX Design Process: Empathize, Define, and Ideate"
+          completeDate="November 5, 2022"
+          link="https://www.coursera.org/account/accomplishments/verify/7VDXKDA8N2QK"
+        />
+        <CertificateItem
+          title="Build Wireframes and Low-Fidelity Prototypes"
+          completeDate="December 18, 2022"
+          link="https://www.coursera.org/account/accomplishments/verify/UEJ958UFQBBU"
         />
       </div>
     </>
