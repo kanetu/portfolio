@@ -71,45 +71,35 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
           <ul className="text-[1.25em] flex justify-between md:max-w-[25em] md:absolute left-[calc(50%-6em)] top-[1.25em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2">
             <li
               className={`${
-                currentRoute == "/"
-                  ? "border-b-2 border-dashed border-project-primary"
-                  : ""
+                currentRoute == "/" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/">Home</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/about"
-                  ? "border-b-2 border-dashed border-project-primary"
-                  : ""
+                currentRoute == "/about" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/about">About</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/works"
-                  ? "border-b-2 border-dashed border-project-primary"
-                  : ""
+                currentRoute == "/works" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/works">Works</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/contact"
-                  ? "border-b-2 border-dashed border-project-primary"
-                  : ""
+                currentRoute == "/contact" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/contact">Contact</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/blog"
-                  ? "border-b-2 border-dashed border-project-primary"
-                  : ""
+                currentRoute == "/blog" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               Blog
