@@ -2,7 +2,7 @@
 title: "Điểm qua những tính năng hấp dẫn trong ES6 - Phần 1"
 date: "2018-07-04T08:15:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/diem-qua-nhung-tinh-nang-hap-dan-trong-es6.png"
 description: 'Sau một thời gian nghiên cứu về ReactJS tôi nhận ra mình còn chưa ổn về javascript và tham khảo trên mạng thì có một thành viên trong nhóm nói rằng: "Chưa nghiêm cứu về ES6 mà đã vội học ReactJS là một sai lầm", ai cũng thế khi nghe nói như vậy thì chắc hẵn sẽ nghĩ là ES6 lợi hại vậy sao?, có lẻ mình đã cầm đèn chạy trước oto rồi.'
 tags:
   - "javascript"

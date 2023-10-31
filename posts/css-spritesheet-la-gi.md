@@ -2,7 +2,7 @@
 title: "CSS Spritesheet là gì? "
 date: "2018-09-10T23:45:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/css-spritesheet-la-gi.png"
 description: "Thêm 1 câu hỏi khi interview FrontEnd, Sẽ có vài lần các bạn sẽ được hỏi là css spritesheet là gì? Tại sao lại dùng chúng? Bạn dùng cách gì để tạo ra 1 hình spritesheet."
 tags:
   - "css"

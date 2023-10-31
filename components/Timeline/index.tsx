@@ -32,9 +32,7 @@ export const Timeline: React.FC<ITimeline> = ({ data }) => {
 
   return (
     <div className="mb-20">
-      <h3 className="text-[1.25em] font-bold mt-[1.625em] mb-[0.625em]">
-        Timeline
-      </h3>
+      <h3 className="text-[1.25em] mt-[1.625em] mb-[0.625em]">Timeline</h3>
       <div className="flex flex-col items-start ml-[0.3125em]">
         {renderTimelineItems()}
         <TimelineStart />

@@ -1,11 +1,60 @@
 import Link from "next/link";
-import { BlogIcon, CloseIcon, UserIcon, WorkIcon } from "../Icons";
+import { BlogIcon, HomeIcon, CloseIcon, UserIcon, WorkIcon } from "../Icons";
 
 interface IMenu {
   isShowMenu: boolean;
   onClickMenu: () => void;
 }
+
+type MenuItemProps = {
+  onClickMenu: () => void;
+  icon: React.ElementType;
+  label: string;
+  link: string;
+};
+const MenuItem: React.FC<MenuItemProps> = ({
+  onClickMenu,
+  label,
+  link,
+  icon: Icon,
+}) => {
+  return (
+    <Link href={link} onClick={onClickMenu}>
+      <div className="w-[8.5em] h-[8.5em] md:w-[10.5em] md:h-[10.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
+        <Icon className="w-[4.375em] h-[4.375em]" />
+        <span>{label}</span>
+      </div>
+    </Link>
+  );
+};
+
 const Menu: React.FC<IMenu> = ({ isShowMenu, onClickMenu }) => {
+  const listMenu = [
+    {
+      link: "/",
+      onClickMenu: onClickMenu,
+      label: "Home",
+      icon: HomeIcon,
+    },
+    {
+      link: "/about",
+      onClickMenu: onClickMenu,
+      label: "About",
+      icon: UserIcon,
+    },
+    {
+      link: "/works-and-contact",
+      onClickMenu: onClickMenu,
+      label: "Works & Contact",
+      icon: WorkIcon,
+    },
+    {
+      link: "/Blog",
+      onClickMenu: onClickMenu,
+      label: "Blog",
+      icon: BlogIcon,
+    },
+  ];
   return (
     <div
       className={`w-full
@@ -28,25 +77,9 @@ const Menu: React.FC<IMenu> = ({ isShowMenu, onClickMenu }) => {
         <CloseIcon />
       </button>
       <div className="wrapper mt-[2em] grid grid-cols-2 w-[20em] md:w-[25em] gap-[2em] md:gap-[4em]">
-        <Link href="/about" onClick={onClickMenu}>
-          <div className="w-[8.5em] h-[8.5em] md:w-[10.5em] md:h-[10.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
-            <UserIcon className="w-[4.375em] h-[4.375em]" />
-            <span>About</span>
-          </div>
-        </Link>
-        <Link href="/blog" onClick={onClickMenu}>
-          <div className="w-[8.5em] h-[8.5em] md:w-[10.5em] md:h-[10.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
-            <BlogIcon className="w-[4.375em] h-[4.375em]" />
-            <span>Blog</span>
-          </div>
-        </Link>
-        <Link href="/works-and-contact" onClick={onClickMenu}>
-          <div className="w-[8.5em] h-[9.5em] md:w-[10.5em] md:h-[10.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
-            <WorkIcon className="w-[4.375em] h-[4.375em]" />
-            <span>Works  & Contact</span>
-          </div>
-        </Link>
-        
+        {listMenu.map((item) => (
+          <MenuItem key={item.link} {...item}></MenuItem>
+        ))}
       </div>
     </div>
   );

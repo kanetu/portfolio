@@ -2,7 +2,7 @@
 title: "Scope và Hoisting"
 date: "2018-10-11T08:45:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/scope-va-hoisting.png"
 description: "Khi làm việc với javascript có bao giờ các bạn đã để ý là chúng ta hoàn toàn có thể sử dụng một biến trước khi chúng được khai báo không?. Thật ra mà nói thì không hề có chuyện sử dụng một biến trước khi nó được khai báo đâu, chỉ là với javascript thì ngôn ngữ này có cơ chế Hoisting vậy Hoisting là gì?"
 tags:
   - "javascript"

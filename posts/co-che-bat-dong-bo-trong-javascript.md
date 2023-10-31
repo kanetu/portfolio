@@ -2,7 +2,7 @@
 title: "Cơ chế bất đồng bộ trong Javascript"
 date: "2018-07-05T10:15:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/co-che-bat-dong-bo-trong-javascript.png"
 description: "Như bao ngày giờ là lúc rãnh nên tôi quyết định tìm hiểu xem cơ chế bất đồng bộ trong javascript nó hoạt động như thế nào, ta xem ví dụ sau"
 tags:
   - "javascript"

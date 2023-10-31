@@ -2,7 +2,7 @@
 title: "Điểm qua những tính năng hấp dẫn trong ES6 - Phần 2"
 date: "2018-07-05T10:15:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/diem-qua-nhung-tinh-nang-hap-dan-trong-es6.png"
 description: "Trước tiên để hiểu gõ về tính năng tiếp theo ta cần hiểu gõ Object trong Javacript là gì, nếu ai đã hiểu rồi thì có thể scoll xuống mục 5."
 tags:
   - "javascript"

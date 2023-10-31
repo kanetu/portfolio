@@ -16,10 +16,10 @@ const About = () => {
         technologies.
       </p>
 
-      <h3 className="text-[1.25em] font-bold mt-[1.625em] mb-[0.625em]">
+      <h3 className="text-[1.25em] mt-[1.625em] mb-[0.625em]">
         Certificates
       </h3>
-      <div className="grid md:grid-cols-2 md:gap-[2em] lg:grid-cols-3 lg:gap-[2em]">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[2em] lg:grid-cols-3 lg:gap-[2em]">
         <CertificateItem
           title="Foundations of User Experience (UX) Design"
           completeDate="November 16, 2022"

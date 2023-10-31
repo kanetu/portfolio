@@ -2,7 +2,7 @@
 title: "Coding Convention - Qui ước mã hóa"
 date: "2019-07-05T10:15:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/coding-convention.png"
 description: 'Để viết bài này mình sẽ đi theo định nghĩa "What is coding convention" của thầy Ân Nguyễn, còn lại là những chia sẽ suy nghĩ của cá nhân mình, nên sẽ không khỏi thiếu sót và cần bổ sung từ thầy cô và các bạn.'
 tags:
   - "soft-skills"

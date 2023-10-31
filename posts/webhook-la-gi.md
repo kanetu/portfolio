@@ -2,7 +2,7 @@
 title: "Webhook là gì?"
 date: "2021-08-21T03:28:52.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/webhook-la-gi.png"
 description: "Webhook là một tính nắng cho phép hệ thống A cập nhật các sự kiện trong thời gian thực của bên thứ ba một cách tự động."
 tags:
   - "technology"

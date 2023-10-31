@@ -2,7 +2,7 @@
 title: "Điểm qua những tính năng hấp dẫn trong ES6 - Phần 3"
 date: "2018-07-06T07:18:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/diem-qua-nhung-tinh-nang-hap-dan-trong-es6.png"
 description: "Hmm..Tính năng này rất thường xuất hiện trong ReactJS. `arrow` dịch ra là mũi tên, vâng chúng ta sẽ làm việc với mũi tên :)."
 tags:
   - "javascript"

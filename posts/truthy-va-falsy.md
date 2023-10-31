@@ -1,8 +1,8 @@
 ---
-title: "Trusthy và Falsy"
+title: "Truthy và Falsy"
 date: "2018-09-28T01:00:40.000Z"
 status: "publish"
-thumbnail: "images/post-thumbnail/array-khong-chi-la-array.png"
+thumbnail: "images/post-thumbnail/truthy-va-falsy.png"
 description: "Truthy và Falsy là gì?, đây là một khái niệm mà rất nhiều người khi học Javascript rất ít khi để ý đến ngay cả mình cũng vậy."
 tags:
   - "javascript"
