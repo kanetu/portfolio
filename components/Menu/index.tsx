@@ -49,7 +49,7 @@ const Menu: React.FC<IMenu> = ({ isShowMenu, onClickMenu }) => {
       icon: WorkIcon,
     },
     {
-      link: "/Blog",
+      link: "/blog",
       onClickMenu: onClickMenu,
       label: "Blog",
       icon: BlogIcon,
