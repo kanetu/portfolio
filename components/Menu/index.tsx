@@ -34,10 +34,12 @@ const Menu: React.FC<IMenu> = ({ isShowMenu, onClickMenu }) => {
             <span>About</span>
           </div>
         </Link>
-        <div className="w-[7.5em] h-[7.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
-          <BlogIcon className="w-[4.375em] h-[4.375em]" />
-          <span>Blog</span>
-        </div>
+        <Link href="/blog" onClick={onClickMenu}>
+          <div className="w-[7.5em] h-[7.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
+            <BlogIcon className="w-[4.375em] h-[4.375em]" />
+            <span>Blog</span>
+          </div>
+        </Link>
         <Link href="/works" onClick={onClickMenu}>
           <div className="w-[7.5em] h-[7.5em] shadow-project flex flex-col justify-center items-center rounded-[0.5em]">
             <WorkIcon className="w-[4.375em] h-[4.375em]" />
