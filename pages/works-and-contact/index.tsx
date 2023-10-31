@@ -1,7 +1,52 @@
-import { useEffect } from "react";
-import { MailIcon, PhoneIcon, SendIcon } from "../../components/Icons";
+import {
+  WorkIcon,
+  MailIcon,
+  PhoneIcon,
+  SendIcon,
+} from "../../components/Icons";
+import { Timeline } from "../../components/Timeline";
 
-const Contact: React.FC = () => {
+const Works = () => {
+  const data = [
+    {
+      id: 4,
+      companyName: "Nashtech",
+      period: "Apr 2021 - Present",
+      isEnd: true,
+    },
+    {
+      id: 3,
+      companyName: "Evizi",
+      period: "Jul 2020 - Mar 2021",
+    },
+    {
+      id: 2,
+      companyName: "Bstar Solutions",
+      period: "Jun 2019 - Jun 2020",
+    },
+  ];
+
+  return (
+    <div>
+      <h2 className="text-[1.5em] md:flex md:items-center">
+        <span className="hidden md:inline mr-[0.34375em] md:ml-[-5px]">
+          <WorkIcon className="w-[2.1875em] h-[2.1875em]" />
+        </span>
+        <span>Works</span>
+      </h2>
+      <p className="text-[1em]">
+        This is my professional timeline and highlight my collaborations with a
+        range of companies. This page serves as a visual representation of my
+        journey as a Front-End Engineer and a testament to my versatility,
+        experience, and expertise in delivering innovative and effective web
+        solutions.
+      </p>
+      <Timeline data={data} />
+    </div>
+  );
+};
+
+const Contact = () => {
   const handleSendMail = (e: React.SyntheticEvent) => {
     e.preventDefault();
     const target = e.target as typeof e.target & {
@@ -16,7 +61,7 @@ const Contact: React.FC = () => {
     link.click();
   };
   return (
-    <>
+    <div>
       <h2 className="text-[1.5em] md:flex md:items-center">
         <span className="hidden md:inline mr-[0.34375em] md:ml-[-5px]">
           <MailIcon className="w-[2.1875em] h-[2.1875em]" />
@@ -100,8 +145,16 @@ const Contact: React.FC = () => {
           </div>
         </form>
       </div>
-    </>
+    </div>
+  );
+};
+const WorksAndContact = () => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[5em]">
+      <Contact></Contact>
+      <Works></Works>
+    </div>
   );
 };
 
-export default Contact;
+export default WorksAndContact;

@@ -48,27 +48,24 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
       </Head>
 
       <div>
-        <Image
-          loader={imageLoader}
-          src="wall-paper.jpg"
-          layout="responsive"
-          width="100"
-          height="100"
-          className="max-h-[15em] object-cover"
-          objectFit="contain"
-          alt="wall-paper"
-        />
-        <Image
-          loader={imageLoader}
-          src="avatar.jpg"
-          width="165"
-          height="165"
-          className="w-[10.3125em] h-[10.3125em] md:w-[14.375em] md:h-[14.375em] rounded-full absolute left-1/2 md:left-[calc(50%-15em)] transform -translate-x-1/2 -translate-y-1/2 md:-translate-y-2/3 border-[white] border-4"
-          objectFit="cover"
-          alt="avatar"
-        />
-        <div className="hidden md:block md:relative md:w-full md:h-[2em]">
-          <ul className="text-[1.25em] font-light flex justify-between md:max-w-[25em] md:absolute left-[calc(50%-6em)] top-[1.25em] transform -translate-x-1/2 md:-translate-x-0 -translate-y-1/2">
+        <div className="hidden lg:flex lg:items-center lg:pt-[1em] lg:px-[20em] xl:px-[10em] px-[25em] justify-between">
+          <div className="flex flex-nowrap">
+            <Image
+              loader={imageLoader}
+              src="avatar.jpg"
+              width="50"
+              height="50"
+              className="rounded mr-2 md:w-[30px] md:h-[30px] xl:w-[50px] xl:h-[50px] 2xl:w-[50px] 2xl:h-[50px]"
+              alt="avatar"
+            />
+            <div className="flex flex-col">
+              <span className="font-semibold text-3">Tu Minh Hieu</span>
+              <span className="font-light text-2 text-gray">
+                Software Engineer
+              </span>
+            </div>
+          </div>
+          <ul className="text-[1.25em] font-light flex justify-between md:max-w-[25em]">
             <li
               className={`${
                 currentRoute == "/" ? "font-normal" : ""
@@ -88,33 +85,39 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
                 currentRoute == "/works" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
-              <Link href="/works">Works</Link>
-            </li>
-            <li
-              className={`${
-                currentRoute == "/contact" ? "font-normal" : ""
-              } md:mx-[1em] md:my-[1em]`}
-            >
-              <Link href="/contact">Contact</Link>
+              <Link href="/works-and-contact">Works & Contact</Link>
             </li>
             <li
               className={`${
                 currentRoute == "/blog" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
-              Blog
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
         </div>
-        <div className="flex p-[1.5625em] justify-between md:hidden">
+        <div className="flex p-[1.5625em] justify-between md:px-[15em] lg:hidden">
           <Link href="/">
-            <button className="rounded-full w-[3.125em] h-[3.125em] rounded-full flex items-center justify-center shadow-project">
-              <HomeIcon className="w-[1.875em] h-[1.875em]" />
-            </button>
+            <div className="flex flex-nowrap">
+              <Image
+                loader={imageLoader}
+                src="avatar.jpg"
+                width="30"
+                height="30"
+                className="rounded mr-2 h-[50px] w-[50px] md:w-[30px] md:h-[30px] sm:w-[50px] sm:h-[50px]"
+                alt="avatar"
+              />
+              <div className="flex flex-col">
+                <span className="font-semibold text-3">Tu Minh Hieu</span>
+                <span className="font-light text-2 text-project-grey">
+                  Software Engineer
+                </span>
+              </div>
+            </div>
           </Link>
           <button
             onClick={onClickMenu}
-            className="rounded-full w-[3.125em] h-[3.125em] rounded-full flex items-center justify-center shadow-project"
+            className="w-[3.125em] h-[3.125em] rounded-full flex items-center justify-center shadow-project"
           >
             <MenuIcon className="w-[1.875em] h-[1.875em]" />
           </button>
