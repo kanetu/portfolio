@@ -33,7 +33,6 @@ export default function Home() {
               width="165"
               height="165"
               className="w-[2.1875em] h-[2.1875em] mr-[1.25em]"
-              objectFit="cover"
               alt="avatar"
             />
           </a>

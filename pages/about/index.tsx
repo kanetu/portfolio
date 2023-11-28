@@ -2,6 +2,32 @@ import CertificateItem from "../../components/CertificateItem";
 import { UserIcon } from "../../components/Icons";
 
 const About = () => {
+  const certificates = [
+    {
+      id: 1,
+      title: "Foundations of User Experience (UX) Design",
+      completeDate: "November 16, 2022",
+      link: "https://www.coursera.org/account/accomplishments/verify/9CU5ZRKZKNQH",
+    },
+    {
+      id: 2,
+      title: "Start the UX Design Process: Empathize, Define, and Ideate",
+      completeDate: "November 5, 2022",
+      link: "https://www.coursera.org/account/accomplishments/verify/7VDXKDA8N2QK",
+    },
+    {
+      id: 3,
+      title: "Build Wireframes and Low-Fidelity Prototypes",
+      completeDate: "December 18, 2022",
+      link: "https://www.coursera.org/account/accomplishments/verify/UEJ958UFQBBU",
+    },
+    {
+      id: 4,
+      title: "Understanding Node.js: Core Concepts",
+      completeDate: "November 28, 2023",
+      link: "https://www.udemy.com/certificate/UC-544d2905-e7b9-414c-b992-bde18ddeaf02/",
+    },
+  ];
   return (
     <>
       <h2 className="text-[1.5em] md:flex md:items-center">
@@ -16,25 +42,16 @@ const About = () => {
         technologies.
       </p>
 
-      <h3 className="text-[1.25em] mt-[1.625em] mb-[0.625em]">
-        Certificates
-      </h3>
+      <h3 className="text-[1.25em] mt-[1.625em] mb-[0.625em]">Certificates</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[2em] lg:grid-cols-3 lg:gap-[2em]">
-        <CertificateItem
-          title="Foundations of User Experience (UX) Design"
-          completeDate="November 16, 2022"
-          link="https://www.coursera.org/account/accomplishments/verify/9CU5ZRKZKNQH"
-        />
-        <CertificateItem
-          title="Start the UX Design Process: Empathize, Define, and Ideate"
-          completeDate="November 5, 2022"
-          link="https://www.coursera.org/account/accomplishments/verify/7VDXKDA8N2QK"
-        />
-        <CertificateItem
-          title="Build Wireframes and Low-Fidelity Prototypes"
-          completeDate="December 18, 2022"
-          link="https://www.coursera.org/account/accomplishments/verify/UEJ958UFQBBU"
-        />
+        {certificates.map((cert) => (
+          <CertificateItem
+            key={cert.id}
+            title={cert.title}
+            completeDate={cert.completeDate}
+            link={cert.link}
+          />
+        ))}
       </div>
     </>
   );

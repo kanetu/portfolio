@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { HomeIcon, MenuIcon } from "../Icons";
+import { MenuIcon } from "../Icons";
 import Link from "next/link";
 import imageLoader from "../../utils/imgLoader";
 
@@ -82,7 +82,7 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
             </li>
             <li
               className={`${
-                currentRoute == "/works" ? "font-normal" : ""
+                currentRoute == "/works-and-contact" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/works-and-contact">Works & Contact</Link>
