@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MenuIcon } from "../Icons";
 import Link from "next/link";
 import imageLoader from "../../utils/imgLoader";
+import resourceLoader from "../../utils/resourceLoader";
 
 interface IHeader {
   currentRoute: string;
@@ -44,6 +45,15 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
           rel="icon"
           type="image/png"
           href="https://raw.githubusercontent.com/kanetu/portfolio/main/public/favicon/favicon.ico"
+        />
+
+        <link
+          rel="stylesheet"
+          href={resourceLoader("/highlight/styles/nord.min.js")}
+        />
+        <link
+          rel="stylesheet"
+          href={resourceLoader("/highlight/highlight.min.js")}
         />
       </Head>
 
