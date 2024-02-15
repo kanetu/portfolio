@@ -216,13 +216,13 @@ sayHello("Kane"); // nó trả về tham chiếu của function và không thự
 
 Để method hoạt động ta cần gán nó vào biến rồi mới thực thi:
 
-```javascript
+```js
 var helloMethod = sayHello("Kane");
 helloMethod(); // Hello Kane
 ```
 
 Không nhất thiết phải trả về function mới được gọi là closure. Đơn giản chỉ cần truy cập tới biến nằm ngoài Lexical scope cũng là closure.
 
-## 3 Tài liệu kham khảo
+## 3. Tài liệu kham khảo
 
 [Everything you wanted to know about JavaScript scope](https://toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/#what-is-scope)
