@@ -1,4 +1,4 @@
-@import "/highlight/styles/nord.min.css";
+@import "/highlight/styles/tokyo-night-dark.min.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -69,4 +69,3 @@ $browser-context: 16;
 
   @return $pixels / $context * 1em;
 }
-
