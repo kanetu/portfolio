@@ -3,7 +3,7 @@ import Image from "next/image";
 import { MenuIcon } from "../Icons";
 import Link from "next/link";
 import imageLoader from "../../utils/imgLoader";
-import resourceLoader from "../../utils/resourceLoader";
+import Script from "next/script";
 
 interface IHeader {
   currentRoute: string;
@@ -46,17 +46,8 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
           type="image/png"
           href="https://raw.githubusercontent.com/kanetu/portfolio/main/public/favicon/favicon.ico"
         />
-
-        <link
-          rel="stylesheet"
-          href={resourceLoader("/highlight/styles/nord.min.js")}
-        />
-        <link
-          rel="stylesheet"
-          href={resourceLoader("/highlight/highlight.min.js")}
-        />
       </Head>
-
+      <Script id="hightlight.js-id" src="/highlight/highlight.min.js"></Script>
       <div>
         <div className="hidden lg:flex lg:items-center lg:pt-[1em] lg:px-[20em] xl:px-[10em] px-[25em] justify-between">
           <div className="flex flex-nowrap">
