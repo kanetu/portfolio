@@ -1,0 +1,7 @@
+declare global {
+  interface Window {
+    hljs: Object;
+
+    example: string;
+  }
+}
