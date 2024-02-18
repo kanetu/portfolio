@@ -26,7 +26,7 @@ const CodeBlock: React.FC<CodeBlockProps> = (props) => {
       <CopyButton
         isShow={isShowCopy}
         onClick={onClickCopy}
-        className="absolute right-[22px] top-[22px]"
+        className="absolute right-[10px] top-[10px]"
       />
       <code {...props} ref={ref} />
     </>
