@@ -21,7 +21,7 @@ const Blog: React.FC<{
     .sort(
       (a, b) =>
         new Date(b.frontmatter.date).getTime() -
-        new Date(a.frontmatter.date).getTime()
+        new Date(a.frontmatter.date).getTime(),
     )
     .filter((post) => post.frontmatter.status === "publish")
     .map((metaData) => {
@@ -29,10 +29,10 @@ const Blog: React.FC<{
       return (
         <li
           key={metaData.slug}
-          className="relative bg-project-black-50 rounded-[1em] m-[.5em]"
+          className="relative hover:border hover:border-solid hover:border-project-primary-100 hover:rounded-xl p-[0.5em]"
         >
-          <Link href={`/blog/${metaData.slug}`}>
-            <span className="absolute z-10 right-0 text-white bg-project-black-700 px-2 py-1 rounded-[0_1em_0_1em]">
+          <Link href={`/blog/${metaData.slug}`} className="relative">
+            <span className="absolute z-10 right-0 text-white bg-project-black-700 px-2 py-1 rounded-[0_.5em_0_1em]">
               {publishTime.value} {publishTime.label} ago
             </span>
             <Image
@@ -41,10 +41,10 @@ const Blog: React.FC<{
               width="0"
               height="0"
               sizes="100vw"
-              className="max-h-[10em] w-full rounded-t-[1em] object-cover"
+              className="max-h-[10em] w-full rounded-lg border border-borderColor border-solid object-cover"
               alt={metaData.frontmatter.thumbnail}
             />
-            <span className="block p-[1em_1.25em_1.25em_1.25em]">
+            <span className="block p-[1em_1.25em_1.25em_0em]">
               <div>
                 {metaData.frontmatter.tags.map((tag: string) => (
                   <span
@@ -56,9 +56,6 @@ const Blog: React.FC<{
                 ))}
               </div>
               <p className="font-semibold">{metaData.frontmatter.title}</p>
-              <span className="block">
-                {metaData.frontmatter.description.slice(0, 100)}...
-              </span>
             </span>
           </Link>
         </li>
@@ -74,7 +71,7 @@ const Blog: React.FC<{
         <span>Blog</span>
       </h2>
       <p className="font-normal text-[1em]">Some writing from me! yah 🍕</p>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[1.625em]">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 mt-[1.625em]">
         {preViewSlugs}
       </ul>
     </>
