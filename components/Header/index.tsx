@@ -3,13 +3,13 @@ import Image from "next/image";
 import { MenuIcon } from "../Icons";
 import Link from "next/link";
 import imageLoader from "../../utils/imgLoader";
-import Script from "next/script";
 
 interface IHeader {
   currentRoute: string;
   onClickMenu: () => void;
 }
 const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
+  const activatedRoute = currentRoute.split("/")[1];
   return (
     <>
       <Head>
@@ -47,7 +47,7 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
           href="https://raw.githubusercontent.com/kanetu/portfolio/main/public/favicon/favicon.ico"
         />
       </Head>
-      <Script id="hightlight.js-id" src="/highlight/highlight.min.js"></Script>
+
       <div>
         <div className="hidden lg:flex lg:items-center lg:pt-[1em] lg:px-[20em] xl:px-[10em] px-[25em] justify-between">
           <div className="flex flex-nowrap">
@@ -69,28 +69,28 @@ const Header: React.FC<IHeader> = ({ currentRoute, onClickMenu }) => {
           <ul className="text-[1.25em] font-light flex justify-between md:max-w-[25em]">
             <li
               className={`${
-                currentRoute == "/" ? "font-normal" : ""
+                activatedRoute === "" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/">Home</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/about" ? "font-normal" : ""
+                activatedRoute === "about" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/about">About</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/works-and-contact" ? "font-normal" : ""
+                activatedRoute === "works-and-contact" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/works-and-contact">Works & Contact</Link>
             </li>
             <li
               className={`${
-                currentRoute == "/blog" ? "font-normal" : ""
+                activatedRoute === "blog" ? "font-normal" : ""
               } md:mx-[1em] md:my-[1em]`}
             >
               <Link href="/blog">Blog</Link>

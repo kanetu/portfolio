@@ -18,7 +18,9 @@ const Layout: React.FC<{ children: JSX.Element }> = ({ children }) => {
       <Header onClickMenu={onClickMenu} currentRoute={router.pathname} />
       <Menu onClickMenu={onClickMenu} isShowMenu={isShowMenu} />
       <div className="lg:px-[20em] xl:px-[10em] md:px-[15em]">
-        <main className="px-[1.5625em] md:px-0 md:flex md:flex-col md:mt-[4em]">{children}</main>
+        <main className="px-[1.5625em] md:px-0 md:flex md:flex-col md:mt-[4em]">
+          {children}
+        </main>
       </div>
       <Footer />
     </div>
