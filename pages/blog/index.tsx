@@ -31,7 +31,7 @@ const Blog: React.FC<{
           key={metaData.slug}
           className="relative hover:border hover:border-solid hover:border-project-primary-100 hover:rounded-xl p-[0.5em]"
         >
-          <Link href={`/blog/${metaData.slug}`} className="relative">
+          <Link href={`/blog/${metaData.slug}`} className="relative block">
             <span className="absolute z-10 right-0 text-white bg-project-black-700 px-2 py-1 rounded-[0_.5em_0_1em]">
               {publishTime.value} {publishTime.label} ago
             </span>
