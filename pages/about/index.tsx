@@ -27,6 +27,12 @@ const About = () => {
       completeDate: "November 28, 2023",
       link: "https://www.udemy.com/certificate/UC-544d2905-e7b9-414c-b992-bde18ddeaf02/",
     },
+    {
+      id: 5,
+      title: "Agile Project Management",
+      completeDate: "March 1, 2024",
+      link: "https://www.coursera.org/account/accomplishments/verify/MSQXWDUQV67L",
+    },
   ];
   return (
     <>
@@ -44,14 +50,16 @@ const About = () => {
 
       <h3 className="text-[1.25em] mt-[1.625em] mb-[0.625em]">Certificates</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-[2em] lg:grid-cols-3 lg:gap-[2em]">
-        {certificates.map((cert) => (
-          <CertificateItem
-            key={cert.id}
-            title={cert.title}
-            completeDate={cert.completeDate}
-            link={cert.link}
-          />
-        ))}
+        {certificates
+          .sort((a, b) => b.id - a.id)
+          .map((cert) => (
+            <CertificateItem
+              key={cert.id}
+              title={cert.title}
+              completeDate={cert.completeDate}
+              link={cert.link}
+            />
+          ))}
       </div>
     </>
   );
